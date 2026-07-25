@@ -43,17 +43,24 @@ public:
     void addcontact()
     {
         contact c;
-        setColor(9);
-        cout << "╔══════════════════════════════════════╗\n";
-        cout << "║";
+         setColor(9);
+            cout << "╔══════════════════════════════════════════════════╗\n";
+            cout << "║";
 
-        setColor(15);
-        cout << "            ADD CONTACT              ";
+            // White heading
+            setColor(15);
+            cout << "                   ADD CONTACT              ";
 
-        setColor(9);
-        cout << " ║\n";
-        cout << "╚══════════════════════════════════════╝\n";
-        setColor(15);
+            // Blue border
+            setColor(9);
+            cout << "      ║\n";
+            cout << "╚══════════════════════════════════════════════════╝\n";
+
+            // ---------- Name ----------
+            setColor(9);
+            
+
+            setColor(15);
         cout << " Enter Name         : ";
         // cin >> c.name;
         cin.ignore();
