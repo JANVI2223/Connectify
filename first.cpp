@@ -1422,7 +1422,7 @@ public:
             cout << endl;
         }
         else{
-            cout<<"password already created";
+            cout<<"----Password Already Created----";
         }
     }
 
@@ -1840,11 +1840,11 @@ int main()
         menuLine("10. Display All Block Contact");
         menuLine("11. Lock Contact");
         menuLine("12. Display Locked Contact");
-         menuLine("13. Unlock Number");
-        menuLine("14. Update Password");
-        menuLine("15. Remove from favorites");
-        menuLine("16. Unblock Number");
-        menuLine("17. Unlock Number");
+         menuLine("13. Update Password");
+        menuLine("14. Remove from favorites");
+        menuLine("15. Unblock Number");
+        menuLine("16. Unlock Number");
+        menuLine("17. Create Password");
         menuLine("0.  Exit");
         setColor(14);
         cout << " Enter Choice: ";
@@ -2081,10 +2081,6 @@ int main()
         {
             obj.showlock();
         }
-        else if (choice == 17)
-        {
-            obj.createpass();
-        }
         else if (choice == 13)
         {
             obj.updatePassword();
@@ -2100,6 +2096,10 @@ int main()
         else if (choice == 16)
         {
             obj.unlock();
+        }
+        else if (choice == 17)
+        {
+            obj.createpass();
         }
         else if (choice == 0)
         {

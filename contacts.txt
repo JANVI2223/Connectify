@@ -12,7 +12,7 @@ joe jonas|4567845362|jonasbrothers@gmail.com|los angeles|0|0|0
 jesse|1234563214|pinkman@gmail.com|los angeles|1|0|0
 janvi|9034296901|janvimangla49@gmail.com|assandh|1|1|1
 henry|0987654321|vecna@gmail.com|upside down|1|0|0
-drishti|8813000447|drishtijaspal@gmail.com|karnal|0|0|1
-danny|2345678953|danny@gmail.com|tokyo|1|0|0
+drishti|8813000447|drishtijaspal@gmail.com|karnal|0|0|0
+danny|2345678953|danny@gmail.com|tokyo|1|0|1
 sudiksha|7056300033|sudiksha@gmail.com|assandh|0|0|0
 sudiksha|7056300033|sudiksha@gmail.com|assandh|0|0|0
