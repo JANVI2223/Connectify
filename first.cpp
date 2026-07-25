@@ -61,7 +61,14 @@ public:
 
         cout << " Enter Phone Number : ";
         cin >> c.phone;
-
+        for (int i = 0; i < contacts.size(); i++)
+        {
+            if (contacts[i].phone == c.phone)
+            {
+                cout << "already exist";
+                return;
+            }
+        }
         cout << " Enter Email        : ";
         cin >> c.email;
 
@@ -1277,7 +1284,7 @@ public:
         {
             if (contacts[i].phone == ph)
             {
-                 if (contacts[i].block)
+                if (contacts[i].block)
                 {
                     cout << "Already in Blocked List." << endl;
                     return;
@@ -1401,31 +1408,52 @@ public:
         }
     }
 
+    // CREATE PASSWORD
+    void createpass()
+    {
+        ifstream fin("password.txt");
+        string pass;
+        getline(fin, pass);
+        if (pass.empty())
+        {
+            cout << " Enter Password: ";
+            cin >> pass;
+            savePassword(pass);
+            cout << endl;
+        }
+        else{
+            cout<<"password already created";
+        }
+    }
+
     // LOCK CONTACT
 
     void lockcontact()
     {
-        string pass;
-        string ph;
+        string ph, ps;
         system("cls");
         cout << endl;
-        setColor(9);
-        cout << "╔══════════════════════════════════════════════════╗\n";
-        cout << "║";
+        // setColor(9);
+        // cout << "╔══════════════════════════════════════════════════╗\n";
+        // cout << "║";
 
-        // White heading
-        setColor(15);
-        cout << "                   SET PASSWORD       ";
+        // // White heading
+        // setColor(15);
+        // cout << "                   SET PASSWORD       ";
 
-        // Blue border
-        setColor(9);
-        cout << "            ║\n";
-        cout << "╚══════════════════════════════════════════════════╝\n";
-        setColor(15);
+        // // Blue border
+        // setColor(9);
+        // cout << "            ║\n";
+        // cout << "╚══════════════════════════════════════════════════╝\n";
+        // setColor(15);
         cout << " Enter Password: ";
-        cin >> pass;
-        savePassword(pass);
+        cin >> ps;
         cout << endl;
+        ifstream fin("password.txt");
+        string pass;
+        getline(fin, pass);
+        if (pass == ps)
+        {
         setColor(9);
         cout << "╔══════════════════════════════════════════════════╗\n";
         cout << "║";
@@ -1446,7 +1474,7 @@ public:
         {
             if (contacts[i].phone == ph)
             {
-                 if (contacts[i].lock)
+                if (contacts[i].lock)
                 {
                     cout << "Already in locked List." << endl;
                     return;
@@ -1461,6 +1489,10 @@ public:
         cout << endl;
         cout << "-------Contact Not Found---------" << endl;
         return;
+    }
+    else{
+        cout<<"incorrect password";
+    }
     }
 
     // TO SAVE THE PASSWORD
@@ -1808,10 +1840,11 @@ int main()
         menuLine("10. Display All Block Contact");
         menuLine("11. Lock Contact");
         menuLine("12. Display Locked Contact");
-        menuLine("13. Update Password");
-        menuLine("14. Remove from favorites");
-        menuLine("15. Unblock Number");
-        menuLine("16. Unlock Number");
+         menuLine("13. Unlock Number");
+        menuLine("14. Update Password");
+        menuLine("15. Remove from favorites");
+        menuLine("16. Unblock Number");
+        menuLine("17. Unlock Number");
         menuLine("0.  Exit");
         setColor(14);
         cout << " Enter Choice: ";
@@ -2047,6 +2080,10 @@ int main()
         else if (choice == 12)
         {
             obj.showlock();
+        }
+        else if (choice == 17)
+        {
+            obj.createpass();
         }
         else if (choice == 13)
         {

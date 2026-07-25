@@ -1,11 +1,10 @@
-yashvi|7206032917|yasss@gmail.com|panipat|0|1|0
+yashvi|7206032917|yasss@gmail.com|panipat|0|1|1
 vasu|6754893455|vasurana@gmail.com|rohtak|0|0|0
 sombr|2342235678|homewrecker@gmail.com|london|0|0|0
-renu|9255177578|renumangla@gmail.com|assandh|0|0|0
+renu|9255177578|renumangla@gmail.com|assandh|0|0|1
 priyanka chopra jonas|7461747368|groomer@gmail.com|los angeles|0|0|0
 olivia rodrigo|2134123413|thecure@gmail.com|texas|0|0|0
 moksh|8708510484|mokshmangla@gmail.com|assandh|0|0|0
-lucky|8569901895|lucky123@gmail.com|karnal|0|0|0
 lakshay|7015067822|lakshay@gmail.com|assandh|0|0|0
 krishna|8683849664|krishnagupta@gmail.com|karnal|0|0|0
 keshav|9306431664|keshavjindal@gmail.com|sonipat|1|0|0
